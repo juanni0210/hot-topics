@@ -1,0 +1,386 @@
+/*
+Color-scheme 
+#000000
+#43a907
+#f7f8fa
+#ffffff
+*/
+
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    font-size: 0.75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Markazi Text', serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* header */
+
+.logo {
+    display: block;
+    margin: 1rem auto;
+    width: 25%;
+}
+
+.logoTagline {
+    margin-bottom: 1.5rem;
+}
+
+.navigation ul {
+    padding: 0;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navigation ul li a {
+    font-size: 1.2rem;
+    display: block;
+    color: #000000;
+    border: 1px solid #43a907; 
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.masthead {
+    display: none;
+}
+
+
+
+/* main-content */
+.main-content h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+#active-menu {
+    background-color: #43a907;
+}
+
+.img-float {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-float figcaption {
+    text-align: center;
+    padding: 1rem;
+}
+
+.article-float {
+    margin-top: 0;
+}
+
+article button {
+    border: none;
+    border-radius: 5px;
+    background-color: #43a907;
+    color: #ffffff;
+    padding: 0.5rem;
+}
+
+/*protfolio page*/
+.rowbox {
+    margin-top: 1rem;
+}
+
+.imgbox {
+    margin: 0;
+    margin-top: 2rem ;
+}
+
+
+/*footer*/
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f7f8fa;
+    margin-top: 1rem;
+    padding-top: 3rem;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-logo {
+    width: 20%;
+    margin-top: 1rem;
+}
+
+.brand, .contact-info {
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    padding:1rem;
+}
+
+.copyright {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+
+    .logo {
+        width: 22%;
+    }
+    
+    .footer-logo {
+        width: 18%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    
+    .logo {
+        width: 20%;
+    }
+    
+    .footer-logo {
+        width: 15%;
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        width: 16%;
+    }
+    
+    .logoTagline {
+        display: none;
+    }
+    
+    .navigation ul {
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+    }
+    
+    .navigation ul li {
+        text-align: center;
+        display: inline-block;
+        width: 49%;
+        margin-right: 1%;
+    }
+
+    .navigation ul li:last-child {
+        margin-right: 0;
+    }
+
+    
+    .masthead {
+        display: block;
+        width: 100%;
+        height: 15rem;
+        margin: 0 auto;
+        background-image: url(../img/masthead.jpg);
+        background-size: cover;
+        background-color: #43a907;
+    }
+    
+    .masthead h1 {
+        padding: 5.5rem;
+        text-align: center;
+    }
+    
+    .img-float {
+        float: left;
+        width: 30%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .img-float figcaption {
+        padding-left: 0;
+        text-align: left;
+    }
+    
+    /*footer*/
+    .footer-logo {
+        width: 25%;
+    }
+    
+    .brand {
+        float: left;
+        width: 45%;
+        margin-left: 3%;
+    }
+    
+    .contact-info {
+        clear: right;
+        float: right;
+        width: 45%;
+        margin-right: 0;
+        margin-top: 1.5rem;
+    }
+    
+    .copyright {
+        clear: both;
+        padding-top: 2rem;    
+    }
+    
+    /*portfolio page*/
+    
+    .portfolio {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .imgbox {
+        text-align: center;
+        width: 47%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 1.25rem;
+    }
+    
+    .logo {
+        float: left;
+        width: 10%;
+        margin-top: 1.25rem;
+        margin-right: 1rem;
+    }
+    
+    .navigation ul {
+        padding: 1rem 0;
+        margin-top: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .navigation ul li {
+        width: 20%;
+    }
+    
+    .navigation ul li a {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+    
+    .article-float {
+        clear: right;
+        float: right;
+        width: 65%;
+        margin-top: 0;
+    }
+    
+    .masthead {
+        height: 20rem;
+    }
+    
+    .masthead h1 {
+        padding: 7rem;
+        padding-left: 0;
+        text-align: left;
+        font-size: 3rem;
+    }
+    
+    .main-content hr {
+        clear: both;
+    }
+    
+    .main-content h2 {
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    /*footer*/
+    .footer-logo {
+        width: 20%;
+    }
+    
+    /*portfolio page*/
+    .imgbox {
+        width: 31%;
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    
+    .logo {
+        width: 8%;
+        margin-top: 1rem;
+    }
+    
+    .masthead {
+        height: 25rem;
+    }
+    
+    .masthead h1 {
+        padding-top: 9rem; 
+    }
+
+}
