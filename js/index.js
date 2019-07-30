@@ -2,7 +2,7 @@ const mainContent = document.querySelector(".main-content");
 const navItems  = document.querySelectorAll(".navigation ul li a");
 let urlHome = "./partials/home.html";
 let urlPortfolio = "./partials/portfolio.html";
-
+console.log("link");
 
 function pageload() {
      fetch(urlHome)
